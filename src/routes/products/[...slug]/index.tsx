@@ -118,7 +118,7 @@ export default component$(() => {
 								<div class="mt-4">
 									<label class="block text-sm font-medium text-gray-700">Select option</label>
 									<select
-										class="mt-1 bg-white dark:bg-gray-950 dark:text-gray-400 dark:border-gray-800 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
+										class="mt-1 bg-white dark:bg-neutral-800 dark:text-gray-400 dark:border-gray-800 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
 										value={selectedVariantIdSignal.value}
 										onChange$={(e: any) => (selectedVariantIdSignal.value = e.target.value)}
 									>

@@ -25,7 +25,7 @@ export default component$<{
 						<div key={facet.id} class="border-b border-gray-200 py-6">
 							<h3 class="-my-3 flow-root">
 								<button
-									class="py-3 bg-white dark:bg-gray-950 w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500"
+									class="py-3 bg-white dark:bg-neutral-800 w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500"
 									type="button"
 								>
 									<span class="font-medium text-gray-900 dark:text-gray-400 uppercase">
@@ -46,7 +46,7 @@ export default component$<{
 									<div class="space-y-4">
 										{facet.values.map((value) => (
 											<div key={value.id} class="flex items-center cursor-pointer">
-												<label class="text-sm text-gray-600">
+												<label class="text-sm text-gray-600 dark:text-gray-300">
 													<input
 														class="h-4 w-4 border-gray-300 rounded text-primary-600 focus:ring-primary-500 cursor-pointer"
 														type="checkbox"

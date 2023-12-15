@@ -19,7 +19,7 @@ export default component$(() => {
 	return (
 		<QwikCityProvider>
 			<Head />
-			<body class="bg-white dark:bg-gray-950" lang="en">
+			<body class="bg-white dark:bg-neutral-800" lang="en">
 				<RouterOutlet />
 				<ServiceWorkerRegister />
 			</body>

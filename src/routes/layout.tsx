@@ -110,7 +110,7 @@ export default component$(() => {
 			<Header />
 			<Cart />
 			<Menu />
-			<main class="pb-12 bg-white dark:bg-gray-950">
+			<main class="pb-12 bg-white dark:bg-neutral-800">
 				<Slot />
 			</main>
 			<Footer />
