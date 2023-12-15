@@ -1,4 +1,4 @@
-import { component$, useSignal, useTask$ } from '@builder.io/qwik';
+import { $, component$, useOnDocument, useSignal, useTask$ } from '@builder.io/qwik';
 import { isBrowser } from '@builder.io/qwik/build';
 import { Moon } from '../icons/Moon';
 import { Sun } from '../icons/Sun';
@@ -7,10 +7,11 @@ export const DarkModeButton = component$(() => {
 	// null mean unintialized
 	const darkMode = useSignal<null | boolean>(null);
 
-	// initialize value
-	useTask$(() => {
-		if (isBrowser) {
+	useOnDocument(
+		'load',
+		$(() => {
 			const storedTheme = localStorage.getItem('dark-mode');
+			console.log(storedTheme);
 			if (storedTheme) {
 				// try to get from localeStorage
 				darkMode.value = storedTheme === 'dark';
@@ -18,8 +19,8 @@ export const DarkModeButton = component$(() => {
 				// if not found, then we will use user prefered color scheme
 				darkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			}
-		}
-	});
+		})
+	);
 
 	// handle value changes
 	useTask$(({ track }) => {
