@@ -115,7 +115,7 @@ export default component$(() => {
 						<button
 							name="Cart"
 							aria-label={`${totalQuantity} items in cart`}
-							class="relative w-9 h-9 bg-white bg-opacity-20 rounded text-white p-1"
+							class="relative w-9 h-9 bg-neutral-300 dark:bg-neutral-700 dark:text-gray-400 bg-opacity-20 rounded text-black p-1"
 							onClick$={() => (appState.showCart = !appState.showCart)}
 						>
 							<ShoppingBagIcon />
