@@ -33,8 +33,8 @@ export default component$(() => {
 			</div>
 
 			<div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-				<div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-					<div class="mb-6 bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm">
+				<div class="bg-white dark:bg-neutral-900 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+					<div class="mb-6 bg-yellow-50 dark:bg-yellow-600/10 border border-yellow-400 text-yellow-800 dark:text-yellow-500 rounded p-4 text-center text-sm">
 						<p>Demo credentials</p>
 						<p>
 							Email address: <span class="font-bold">test@vendure.io</span>
@@ -53,7 +53,7 @@ export default component$(() => {
 									value={email.value}
 									required
 									onInput$={(ev) => (email.value = (ev.target as HTMLInputElement).value)}
-									class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+									class="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-neutral-700 rounded-md shadow-sm placeholder-gray-400 dark:bg-neutral-800/70 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 								/>
 							</div>
 						</div>
@@ -71,7 +71,7 @@ export default component$(() => {
 											login();
 										}
 									}}
-									class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+									class="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-neutral-700 rounded-md shadow-sm placeholder-gray-400 dark:bg-neutral-800/70 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 								/>
 							</div>
 						</div>

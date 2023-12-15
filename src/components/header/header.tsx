@@ -111,7 +111,7 @@ export default component$(() => {
 						))}
 					</div>
 					<div class="flex-1 block md:pr-8"></div>
-					<div class="">
+					<div class="flex gap-2">
 						<button
 							name="Cart"
 							aria-label={`${totalQuantity} items in cart`}
