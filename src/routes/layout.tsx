@@ -18,7 +18,6 @@ import { getActiveOrderQuery } from '~/providers/shop/orders/order';
 import { ActiveCustomer, AppState } from '~/types';
 import { extractLang } from '~/utils/i18n';
 import Cart from '../components/cart/Cart';
-import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -113,7 +112,7 @@ export default component$(() => {
 			<main class="pb-12 bg-white dark:bg-neutral-800">
 				<Slot />
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 });
