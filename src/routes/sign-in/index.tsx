@@ -100,16 +100,16 @@ export default component$(() => {
 						</div>
 
 						{error.value !== '' && (
-							<div class="rounded-md bg-red-50 p-4">
+							<div class="rounded-md bg-red-50 dark:bg-red-600/10 p-4">
 								<div class="flex">
 									<div class="flex-shrink-0">
 										<XCircleIcon />
 									</div>
 									<div class="ml-3">
-										<h3 class="text-sm font-medium text-red-800">
+										<h3 class="text-sm font-medium text-red-800 dark:text-red-500">
 											We ran into a problem signing you in!
 										</h3>
-										<p class="text-sm text-red-700 mt-2">{error.value}</p>
+										<p class="text-sm text-red-700  dark:text-red-400 mt-2">{error.value}</p>
 									</div>
 								</div>
 							</div>
