@@ -61,7 +61,7 @@ export default component$(() => {
 		<div>
 			<div class="max-w-6xl mx-auto px-4 py-10">
 				<div>
-					<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8">
+					<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 dark:text-gray-400 my-8">
 						{productSignal.value.name}
 					</h2>
 					<Breadcrumbs
@@ -118,7 +118,7 @@ export default component$(() => {
 								<div class="mt-4">
 									<label class="block text-sm font-medium text-gray-700">Select option</label>
 									<select
-										class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
+										class="mt-1 bg-white dark:bg-gray-950 dark:text-gray-400 dark:border-gray-800 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
 										value={selectedVariantIdSignal.value}
 										onChange$={(e: any) => (selectedVariantIdSignal.value = e.target.value)}
 									>
@@ -138,7 +138,7 @@ export default component$(() => {
 								<Price
 									priceWithTax={selectedVariantSignal.value?.priceWithTax}
 									currencyCode={selectedVariantSignal.value?.currencyCode}
-									forcedClass="text-3xl text-gray-900 mr-4"
+									forcedClass="text-3xl text-gray-900 dark:text-gray-400 mr-4"
 								></Price>
 								<div class="flex sm:flex-col1 align-baseline">
 									<button
@@ -178,7 +178,7 @@ export default component$(() => {
 									</button>
 									<button
 										type="button"
-										class="ml-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500"
+										class="ml-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:dark:bg-gray-800 hover:text-gray-500"
 									>
 										<HeartIcon />
 										<span class="sr-only">{$localize`Add to favorites`}</span>

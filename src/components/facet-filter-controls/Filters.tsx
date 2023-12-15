@@ -25,10 +25,12 @@ export default component$<{
 						<div key={facet.id} class="border-b border-gray-200 py-6">
 							<h3 class="-my-3 flow-root">
 								<button
-									class="py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500"
+									class="py-3 bg-white dark:bg-gray-950 w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500"
 									type="button"
 								>
-									<span class="font-medium text-gray-900 uppercase">{facet.name}</span>
+									<span class="font-medium text-gray-900 dark:text-gray-400 uppercase">
+										{facet.name}
+									</span>
 									<span
 										class="ml-6 flex items-center"
 										onClick$={() => {
@@ -67,7 +69,7 @@ export default component$<{
 						<div class="fixed inset-0 flex z-40">
 							<div class="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto translate-x-0">
 								<div class="px-4 flex items-center justify-between">
-									<h2 class="text-lg font-medium text-gray-900">Filters</h2>
+									<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">Filters</h2>
 									<button
 										type="button"
 										class="-mr-2 w-10 h-10 bg-white p-2 rounded-md flex items-center justify-center text-gray-400"
@@ -87,7 +89,9 @@ export default component$<{
 													class="px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500"
 													type="button"
 												>
-													<span class="font-medium text-gray-900 uppercase">{facet.name}</span>
+													<span class="font-medium text-gray-900 dark:text-gray-400 uppercase">
+														{facet.name}
+													</span>
 													<span
 														class="ml-6 flex items-center"
 														onClick$={() => {

@@ -1,7 +1,7 @@
 import {
 	$,
-	Slot,
 	component$,
+	Slot,
 	useContextProvider,
 	useOn,
 	useStore,
@@ -54,7 +54,11 @@ export default component$(() => {
 	const state = useStore<AppState>({
 		showCart: false,
 		showMenu: false,
-		customer: { id: CUSTOMER_NOT_DEFINED_ID, firstName: '', lastName: '' } as ActiveCustomer,
+		customer: {
+			id: CUSTOMER_NOT_DEFINED_ID,
+			firstName: '',
+			lastName: '',
+		} as ActiveCustomer,
 		activeOrder: {} as Order,
 		collections: collectionsSignal.value || [],
 		availableCountries: availableCountriesSignal.value || [],
@@ -106,7 +110,7 @@ export default component$(() => {
 			<Header />
 			<Cart />
 			<Menu />
-			<main class="pb-12 bg-gray-50">
+			<main class="pb-12 bg-white dark:bg-gray-950">
 				<Slot />
 			</main>
 			<Footer />

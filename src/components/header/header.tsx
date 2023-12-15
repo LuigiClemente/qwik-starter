@@ -4,11 +4,11 @@ import { APP_STATE, CUSTOMER_NOT_DEFINED_ID } from '~/constants';
 import { logoutMutation } from '~/providers/shop/account/account';
 import { getActiveCustomerQuery } from '~/providers/shop/customer/customer';
 import { GitHubLink } from '../GitHubLink/GitHubLink';
+import { DarkModeButton } from '../dark-mode-button/dark-mode-button';
 import LogoutIcon from '../icons/LogoutIcon';
 import MenuIcon from '../icons/MenuIcon';
 import ShoppingBagIcon from '../icons/ShoppingBagIcon';
 import UserIcon from '../icons/UserIcon';
-import SearchBar from '../search-bar/SearchBar';
 
 export default component$(() => {
 	const appState = useContext(APP_STATE);
@@ -110,9 +110,7 @@ export default component$(() => {
 							</Link>
 						))}
 					</div>
-					<div class="flex-1 block md:pr-8">
-						<SearchBar />
-					</div>
+					<div class="flex-1 block md:pr-8"></div>
 					<div class="">
 						<button
 							name="Cart"
@@ -129,6 +127,7 @@ export default component$(() => {
 								''
 							)}
 						</button>
+						<DarkModeButton />
 					</div>
 				</div>
 				<GitHubLink />

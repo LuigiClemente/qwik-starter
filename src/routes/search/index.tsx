@@ -1,4 +1,4 @@
-import { $, QwikKeyboardEvent, component$, useStore, useTask$ } from '@builder.io/qwik';
+import { $, component$, QwikKeyboardEvent, useStore, useTask$ } from '@builder.io/qwik';
 import { routeLoader$, useLocation } from '@builder.io/qwik-city';
 import Filters from '~/components/facet-filter-controls/Filters';
 import FiltersButton from '~/components/filters-button/FiltersButton';
@@ -82,7 +82,7 @@ export default component$(() => {
 			}}
 		>
 			<div class="flex justify-between items-center">
-				<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8">
+				<h2 class="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 dark:text-gray-400 my-8">
 					{term ? `Results for "${term}"` : 'All filtered results'}
 				</h2>
 				{!!state.facedValues.length && (

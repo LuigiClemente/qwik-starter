@@ -1,6 +1,6 @@
 import {
-	QwikChangeEvent,
 	component$,
+	QwikChangeEvent,
 	useComputed$,
 	useContext,
 	useSignal,
@@ -63,7 +63,7 @@ export default component$<{
 
 							<div class="ml-4 flex-1 flex flex-col">
 								<div>
-									<div class="flex justify-between text-base font-medium text-gray-900">
+									<div class="flex justify-between text-base font-medium text-gray-900 dark:text-gray-400">
 										<h3>
 											<Link href={`/products/${line.productVariant.product.slug}/`}>
 												{line.productVariant.name}
@@ -88,7 +88,10 @@ export default component$<{
 												name={`quantity-${line.id}`}
 												value={line.quantity}
 												onChange$={async (e: QwikChangeEvent<HTMLSelectElement>) => {
-													currentOrderLineSignal.value = { id: line.id, value: +e.target?.value };
+													currentOrderLineSignal.value = {
+														id: line.id,
+														value: +e.target?.value,
+													};
 												}}
 												class="max-w-full rounded-md border border-gray-300 py-1.5 text-base leading-5 font-medium text-gray-700 text-left shadow-sm focus:outline-none focus:ring-1 focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 											>

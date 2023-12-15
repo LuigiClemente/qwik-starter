@@ -16,7 +16,7 @@ export default component$(() => {
 	});
 
 	return store.order ? (
-		<div class="max-w-6xl m-auto rounded-lg p-4 space-y-4 text-gray-900">
+		<div class="max-w-6xl m-auto rounded-lg p-4 space-y-4 text-gray-900 dark:text-gray-400">
 			<div>
 				<h2 class="mb-2">
 					Order <span class="text-xl font-semibold">{store.order?.code}</span>

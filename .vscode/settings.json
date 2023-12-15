@@ -4,8 +4,15 @@
     "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#1d4ed8",
     "titleBar.activeForeground": "#ffffff",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }

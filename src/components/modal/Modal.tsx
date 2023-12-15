@@ -1,4 +1,4 @@
-import { PropFunction, Slot, component$ } from '@builder.io/qwik';
+import { component$, PropFunction, Slot } from '@builder.io/qwik';
 import { Button } from '../buttons/Button';
 import { HighlightedButton } from '../buttons/HighlightedButton';
 import CheckIcon from '../icons/CheckIcon';
@@ -35,7 +35,10 @@ export const Modal = component$(({ title, open, iconBackground, onSubmit$, onCan
 									{<Slot name="modalIcon" />}
 								</div>
 								<div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-									<h3 class="text-xl leading-6 font-medium text-gray-900" id="modal-title">
+									<h3
+										class="text-xl leading-6 font-medium text-gray-900 dark:text-gray-400"
+										id="modal-title"
+									>
 										{title}
 									</h3>
 									<div class="mt-2">

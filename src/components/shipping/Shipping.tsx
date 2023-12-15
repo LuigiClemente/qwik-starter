@@ -97,17 +97,24 @@ export default component$<IProps>(({ onForward$ }) => {
 	return (
 		<div>
 			<div>
-				<h2 class="text-lg font-medium text-gray-900">{$localize`Contact information`}</h2>
+				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+					{$localize`Contact information`}
+				</h2>
 				<form>
 					<div class="mt-4">
-						<label class="block text-sm font-medium text-gray-700">{$localize`Email address`}</label>
+						<label class="block text-sm font-medium text-gray-700">
+							{$localize`Email address`}
+						</label>
 						<div class="mt-1">
 							<input
 								type="email"
 								value={appState.customer?.emailAddress}
 								disabled={appState.customer?.id !== CUSTOMER_NOT_DEFINED_ID}
 								onChange$={$((event: QwikChangeEvent<HTMLInputElement>) => {
-									appState.customer = { ...appState.customer, emailAddress: event.target.value };
+									appState.customer = {
+										...appState.customer,
+										emailAddress: event.target.value,
+									};
 								})}
 								class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 							/>
@@ -122,7 +129,10 @@ export default component$<IProps>(({ onForward$ }) => {
 									value={appState.customer?.firstName}
 									disabled={appState.customer?.id !== CUSTOMER_NOT_DEFINED_ID}
 									onChange$={$((event: QwikChangeEvent<HTMLInputElement>) => {
-										appState.customer = { ...appState.customer, firstName: event.target.value };
+										appState.customer = {
+											...appState.customer,
+											firstName: event.target.value,
+										};
 									})}
 									class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 								/>
@@ -137,7 +147,10 @@ export default component$<IProps>(({ onForward$ }) => {
 									value={appState.customer?.lastName}
 									disabled={appState.customer?.id !== CUSTOMER_NOT_DEFINED_ID}
 									onChange$={$((event: QwikChangeEvent<HTMLInputElement>) => {
-										appState.customer = { ...appState.customer, lastName: event.target.value };
+										appState.customer = {
+											...appState.customer,
+											lastName: event.target.value,
+										};
 									})}
 									class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
 								/>
@@ -149,7 +162,9 @@ export default component$<IProps>(({ onForward$ }) => {
 
 			<input type="hidden" name="action" value="setCheckoutShipping" />
 			<div class="mt-10 border-t border-gray-200 pt-10">
-				<h2 class="text-lg font-medium text-gray-900">{$localize`Shipping information`}</h2>
+				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+					{$localize`Shipping information`}
+				</h2>
 			</div>
 
 			<AddressForm shippingAddress={appState.shippingAddress} />

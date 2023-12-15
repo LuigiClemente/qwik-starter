@@ -20,7 +20,7 @@ export default component$(
 				<Price
 					priceWithTax={priceWithTax}
 					currencyCode={currencyCode}
-					forcedClass="text-sm font-medium text-gray-900"
+					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-400"
 				/>
 			</Link>
 		);
