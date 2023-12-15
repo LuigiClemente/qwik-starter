@@ -1,13 +1,14 @@
-import { component$, type QwikIntrinsicElements } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 
-// copied from ibm carbon moon
-export const Moon = component$<QwikIntrinsicElements['svg']>((props) => {
+export const Moon = component$(() => {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" {...props}>
-			<path
-				fill="#888888"
-				d="M13.503 5.414a15.076 15.076 0 0 0 11.593 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3Z"
-			/>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 20 20"
+			fill="currentColor"
+			class="h-6 w-6 text-gray-900 dark:text-gray-100"
+		>
+			<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
 		</svg>
 	);
 });
