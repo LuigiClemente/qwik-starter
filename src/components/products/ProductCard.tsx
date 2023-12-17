@@ -16,11 +16,11 @@ export default component$(
 					alt={productName}
 				/>
 				<div class="h-2" />
-				<div class="text-sm text-gray-700 dark:text-gray-400">{productName}</div>
+				<div class="text-sm text-gray-700 dark:text-gray-300">{productName}</div>
 				<Price
 					priceWithTax={priceWithTax}
 					currencyCode={currencyCode}
-					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-400"
+					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-300"
 				/>
 			</Link>
 		);

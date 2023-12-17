@@ -1,0 +1,8 @@
+td,
+th {
+	@apply p-4 text-left align-middle;
+}
+
+tbody tr {
+	@apply border-t hover:dark:bg-neutral-700 hover:bg-gray-200 odd:bg-gray-100 odd:dark:bg-neutral-800;
+}

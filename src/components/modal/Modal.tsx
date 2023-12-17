@@ -36,7 +36,7 @@ export const Modal = component$(({ title, open, iconBackground, onSubmit$, onCan
 								</div>
 								<div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
 									<h3
-										class="text-xl leading-6 font-medium text-gray-900 dark:text-gray-400"
+										class="text-xl leading-6 font-medium text-gray-900 dark:text-gray-300"
 										id="modal-title"
 									>
 										{title}

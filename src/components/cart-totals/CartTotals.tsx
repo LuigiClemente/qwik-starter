@@ -12,7 +12,7 @@ export default component$<{
 				<CartPrice
 					order={order}
 					field={'subTotalWithTax'}
-					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-400"
+					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-300"
 				/>
 			</div>
 			<div class="flex items-center justify-between">
@@ -20,7 +20,7 @@ export default component$<{
 				<CartPrice
 					order={order}
 					field={'shippingWithTax'}
-					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-400"
+					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-300"
 				/>
 			</div>
 			<div class="flex items-center justify-between border-t border-gray-200 pt-6">
@@ -28,7 +28,7 @@ export default component$<{
 				<CartPrice
 					order={order}
 					field={'totalWithTax'}
-					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-400"
+					forcedClass="text-sm font-medium text-gray-900 dark:text-gray-300"
 				/>
 			</div>
 		</dl>

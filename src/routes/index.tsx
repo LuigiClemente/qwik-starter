@@ -53,7 +53,7 @@ export default component$(() => {
 					<div class="-my-2">
 						<div class="box-content py-2 px-2 relative overflow-x-auto xl:overflow-visible">
 							<div class="sm:px-6 lg:px-8 xl:px-0 pb-4">
-								<h2 class="text-2xl font-light tracking-tight text-gray-900 dark:text-gray-400">
+								<h2 class="text-2xl font-light tracking-tight text-gray-900 dark:text-gray-300">
 									{$localize`Shop by Category`}
 								</h2>
 							</div>

@@ -16,10 +16,10 @@ export default component$(() => {
 						<div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity opacity-100"></div>
 						<div class="fixed inset-y-0 pr-10 max-w-full flex">
 							<div class="w-screen max-w-md translate-x-0">
-								<div class="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
+								<div class="h-full flex flex-col bg-white dark:bg-neutral-800 shadow-xl overflow-y-scroll">
 									<div class="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
 										<div class="flex items-start justify-between">
-											<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+											<h2 class="text-lg font-medium text-gray-900 dark:text-gray-300">
 												{$localize`Menu`}
 											</h2>
 											<div class="ml-3 h-7 flex items-center">
@@ -36,7 +36,7 @@ export default component$(() => {
 										<div class="flex flex-col pt-6">
 											{collections.map((collection) => (
 												<a
-													class="text-lg font-medium text-gray-90 hover:text-gray-500 pt-4"
+													class="text-lg font-medium text-gray-900 hover:text-gray-500 dark:text-gray-400 hover:dark:text-gray-300 pt-4"
 													href={`/collections/${collection.slug}`}
 													key={collection.id}
 												>

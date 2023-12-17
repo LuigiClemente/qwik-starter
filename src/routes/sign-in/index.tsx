@@ -21,7 +21,7 @@ export default component$(() => {
 	return (
 		<div class="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
 			<div class="sm:mx-auto sm:w-full sm:max-w-md">
-				<h2 class="mt-6 text-center text-3xl text-gray-900 dark:text-gray-400">
+				<h2 class="mt-6 text-center text-3xl text-gray-900 dark:text-gray-300">
 					Sign in to your account
 				</h2>
 				<p class="mt-2 text-center text-sm text-gray-600">
@@ -45,7 +45,9 @@ export default component$(() => {
 					</div>
 					<div class="space-y-6">
 						<div>
-							<label class="block text-sm font-medium text-gray-700">Email address</label>
+							<label class="block text-sm font-medium text-gray-700 dark:text-gray-400">
+								Email address
+							</label>
 							<div class="mt-1">
 								<input
 									type="email"
@@ -59,7 +61,9 @@ export default component$(() => {
 						</div>
 
 						<div>
-							<label class="block text-sm font-medium text-gray-700">Password</label>
+							<label class="block text-sm font-medium text-gray-700 dark:text-gray-400">
+								Password
+							</label>
 							<div class="mt-1">
 								<input
 									type="password"
@@ -84,7 +88,7 @@ export default component$(() => {
 									onChange$={(ev) => (rememberMe.value = ev.target.checked)}
 									class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
 								/>
-								<label class="ml-2 block text-sm text-gray-900 dark:text-gray-400">
+								<label class="ml-2 block text-sm text-gray-900 dark:text-gray-300">
 									Remember me
 								</label>
 							</div>

@@ -87,14 +87,11 @@ export default component$(() => {
 						</div>
 					</div>
 				</div>
-				<div class="max-w-6xl mx-auto p-4 flex items-center space-x-4">
-					<button
-						class="block sm:hidden text-white"
-						onClick$={() => (appState.showMenu = !appState.showMenu)}
-					>
+				<div class="max-w-6xl mx-auto p-4 flex text-white dark:text-gray-300 items-center space-x-4">
+					<button class="block sm:hidden" onClick$={() => (appState.showMenu = !appState.showMenu)}>
 						<MenuIcon />
 					</button>
-					<h1 class="text-white w-10">
+					<h1 class="w-10">
 						<Link href="/">
 							<img src={`/cube-logo-small.webp`} width={40} height={31} alt="Vendure logo" />
 						</Link>
@@ -102,7 +99,7 @@ export default component$(() => {
 					<div class="hidden space-x-4 sm:block">
 						{collections.map((collection) => (
 							<Link
-								class="text-sm md:text-base dark:text-gray-400"
+								class="text-sm md:text-base dark:text-gray-300"
 								href={`/collections/${collection.slug}`}
 								key={collection.id}
 							>
@@ -115,7 +112,7 @@ export default component$(() => {
 						<button
 							name="Cart"
 							aria-label={`${totalQuantity} items in cart`}
-							class="relative w-9 h-9 bg-neutral-300 dark:bg-neutral-700 dark:text-gray-400 bg-opacity-20 rounded text-black p-1"
+							class="relative w-9 h-9 bg-neutral-300 dark:bg-neutral-700 dark:text-gray-300 bg-opacity-20 rounded text-black p-1"
 							onClick$={() => (appState.showCart = !appState.showCart)}
 						>
 							<ShoppingBagIcon />

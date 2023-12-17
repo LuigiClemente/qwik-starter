@@ -63,7 +63,7 @@ export default component$<{
 
 							<div class="ml-4 flex-1 flex flex-col">
 								<div>
-									<div class="flex justify-between text-base font-medium text-gray-900 dark:text-gray-400">
+									<div class="flex justify-between text-base font-medium text-gray-900 dark:text-gray-300">
 										<h3>
 											<Link href={`/products/${line.productVariant.product.slug}/`}>
 												{line.productVariant.name}

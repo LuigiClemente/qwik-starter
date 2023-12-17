@@ -97,7 +97,7 @@ export default component$<IProps>(({ onForward$ }) => {
 	return (
 		<div>
 			<div>
-				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-300">
 					{$localize`Contact information`}
 				</h2>
 				<form>
@@ -162,7 +162,7 @@ export default component$<IProps>(({ onForward$ }) => {
 
 			<input type="hidden" name="action" value="setCheckoutShipping" />
 			<div class="mt-10 border-t border-gray-200 pt-10">
-				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+				<h2 class="text-lg font-medium text-gray-900 dark:text-gray-300">
 					{$localize`Shipping information`}
 				</h2>
 			</div>

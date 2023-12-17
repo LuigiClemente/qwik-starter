@@ -22,7 +22,7 @@ export default component$(() => {
 								<div class="h-full flex flex-col bg-white dark:bg-neutral-800 shadow-xl overflow-y-scroll">
 									<div class="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
 										<div class="flex items-start justify-between">
-											<h2 class="text-lg font-medium text-gray-900 dark:text-gray-400">
+											<h2 class="text-lg font-medium text-gray-900 dark:text-gray-300">
 												{$localize`Shopping cart`}
 											</h2>
 											<div class="ml-3 h-7 flex items-center">
@@ -48,7 +48,7 @@ export default component$(() => {
 									</div>
 									{appState.activeOrder?.totalQuantity && isInEditableUrl && (
 										<div class="border-t border-gray-200 py-6 px-4 sm:px-6">
-											<div class="flex justify-between text-base font-medium text-gray-900 dark:text-gray-400">
+											<div class="flex justify-between text-base font-medium text-gray-900 dark:text-gray-300">
 												<p>{$localize`Subtotal`}</p>
 												<p>
 													<CartPrice field={'subTotalWithTax'} order={appState.activeOrder} />

@@ -46,7 +46,7 @@ export default component$<{ onForward$: PropFunction<() => void> }>(() => {
 						<div class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
 							<div class="lg:col-span-2">
 								<div>
-									<h2 class="text-3xl flex items-center space-x-2 sm:text-5xl font-light tracking-tight text-gray-900 dark:text-gray-400 my-8">
+									<h2 class="text-3xl flex items-center space-x-2 sm:text-5xl font-light tracking-tight text-gray-900 dark:text-gray-300 my-8">
 										<CheckCircleIcon forcedClass="text-green-600 w-8 h-8 sm:w-12 sm:h-12" />
 										<span>{$localize`Order summary`}</span>
 									</h2>

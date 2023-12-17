@@ -9,6 +9,10 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: colors.blue,
+				neutral: {
+					800: '#2f2f2f',
+					900: '#252525',
+				},
 			},
 			fontFamily: {
 				sans: ["'Space Grotesk Variable'", ...fontFamily.sans],
